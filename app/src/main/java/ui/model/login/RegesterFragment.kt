@@ -44,8 +44,10 @@ class RegesterFragment : Fragment() {
                 Toast.makeText(requireContext(), "Id =" + it?.id, Toast.LENGTH_SHORT).show()
                 findNavController().navigate(R.id.action_regesterFragment_to_homeFragment)
             }
+        }
 
-//            binding.
+        binding.goToLogin.setOnClickListener {
+            findNavController().navigate(R.id.action_regesterFragment_to_loginFragment)
         }
     }
 
