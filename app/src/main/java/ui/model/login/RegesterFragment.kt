@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
+import com.example.retrofit_step_by_step.R
 import com.example.retrofit_step_by_step.databinding.FragmentRegesterBinding
 import data.User
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -40,7 +42,10 @@ class RegesterFragment : Fragment() {
             regesterViewModel.register(user)
             regesterViewModel.resultUserLiveData.observe(viewLifecycleOwner){
                 Toast.makeText(requireContext(), "Id =" + it?.id, Toast.LENGTH_SHORT).show()
+                findNavController().navigate(R.id.action_regesterFragment_to_homeFragment)
             }
+
+//            binding.
         }
     }
 

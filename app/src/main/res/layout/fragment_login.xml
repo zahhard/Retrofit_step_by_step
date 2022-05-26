@@ -48,5 +48,11 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:text="login"
+        android:layout_margin="25dp"/>
 
 </LinearLayout>
