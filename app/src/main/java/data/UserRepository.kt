@@ -1,11 +1,13 @@
 package data
 
 import android.util.Log
+import java.util.*
 
 class UserRepository (val userLocalDataSource: UserLocalDataSource,
                       val userRemoteDataSource: UserRemoteDataSource) {
 
     var resultUser : User? = null
+    var detailUser : User? = null
 
     suspend fun getUser(user : User) : User {
         Log.d("panjshanbe" , "getUser in UserRepository called")
@@ -23,5 +25,11 @@ class UserRepository (val userLocalDataSource: UserLocalDataSource,
         return userRemoteDataSource.getUser(id)
     }
 
-//    suspend fun login()
+    suspend fun getUserList(): List<User>{
+        return userRemoteDataSource.getUserLIst()
+    }
+
+    suspend fun updateState(status : String) : User{
+        return userRemoteDataSource.updateState(detailUser!!.id, status)
+    }
 }

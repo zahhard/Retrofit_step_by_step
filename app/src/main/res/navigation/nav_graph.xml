@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/regesterFragment"
-        android:name="ui.model.login.RegesterFragment"
+        android:name="ui.model.register.RegesterFragment"
         android:label="fragment_regester"
         tools:layout="@layout/fragment_regester" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="ui.model.login.HomeFragment"
+        android:name="ui.model.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
 </navigation>

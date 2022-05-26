@@ -16,4 +16,12 @@ class UserRemoteDataSource(val loginApiService : LoginService) {
         return loginApiService.getUser(id)
     }
 
+    suspend fun getUserLIst() : List<User>{
+        return loginApiService.getUserList()
+    }
+
+    suspend fun updateState(id: String, state : String) : User {
+        return loginApiService.updateState(id, state)
+    }
+
 }

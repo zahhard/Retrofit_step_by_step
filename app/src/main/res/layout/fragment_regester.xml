@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="ui.model.login.RegesterFragment">
+    tools:context="ui.model.register.RegesterFragment">
 
 
     <TextView
@@ -27,7 +27,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextName"
-            android:inputType="numberPassword"
+            android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:textColor="@color/black"
             android:layout_height="wrap_content"
@@ -65,13 +65,13 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <TextView
         android:id="@+id/go_to_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Have an account ? "
         android:layout_margin="25dp"
-        android:textColor="@color/white"
+        android:textColor="@color/purple_500"
         android:gravity="center"/>
 
     <Button

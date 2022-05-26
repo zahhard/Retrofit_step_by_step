@@ -1,4 +1,4 @@
-package ui.model.login
+package ui.model.register
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

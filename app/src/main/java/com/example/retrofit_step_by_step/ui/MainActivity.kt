@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.retrofit_step_by_step.R
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import ui.model.login.RegesterViewModel
+import ui.model.register.RegesterViewModel
 
 class MainActivity : AppCompatActivity() {
     val regesterViewModel : RegesterViewModel by viewModel()

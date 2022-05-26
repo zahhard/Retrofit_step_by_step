@@ -14,6 +14,7 @@ class LoginViewModel(val userRepository: UserRepository) : ViewModel() {
         viewModelScope.launch {
             var user = userRepository.getUser(id)
             loginSuccess.value = user.password == password
+            userRepository.detailUser = user
         }
     }
 }

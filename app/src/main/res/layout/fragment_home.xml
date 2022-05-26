@@ -1,13 +1,81 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="ui.model.login.HomeFragment">
+    tools:context="ui.model.home.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars" />
+
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/tv_name"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
-</FrameLayout>
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+
+    <Button
+        android:id="@+id/button_edit"
+        app:cornerRadius="10dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="edit" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="25dp"
+        android:hint="My state"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_update_state"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="25dp"
+        app:cornerRadius="10dp"
+        android:layout_marginVertical="25dp"
+        android:layout_height="wrap_content"
+        android:text="update state" />
+</LinearLayout>

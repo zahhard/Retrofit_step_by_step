@@ -6,4 +6,5 @@ data class User (
     var name : String,
     var password : Int,
     var id : String = "0",
+    var state : String = "at work"
     )

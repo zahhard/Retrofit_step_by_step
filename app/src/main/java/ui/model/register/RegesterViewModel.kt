@@ -1,4 +1,4 @@
-package ui.model.login
+package ui.model.register
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -16,6 +16,7 @@ class RegesterViewModel(val userRepository: UserRepository) : ViewModel() {
         viewModelScope.launch {
            var resultUser = userRepository.register(user)
             resultUserLiveData.value = resultUser
+            userRepository.detailUser = resultUser
         }
     }
 }
