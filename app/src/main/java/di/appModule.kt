@@ -12,6 +12,7 @@ import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import ui.model.login.LoginViewModel
 import ui.model.login.RegesterViewModel
 
 val appModule = module {
@@ -51,4 +52,5 @@ val appModule = module {
     }
 
     viewModel { RegesterViewModel (get()) }
+    viewModel { LoginViewModel (get()) }
 }
